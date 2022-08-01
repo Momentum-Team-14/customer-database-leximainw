@@ -43,7 +43,7 @@ function formatDate(date)
     }
     else
     {
-        return `${months[date.getMonth()].substring(0, 3)} ${date.getDate()} ${date.getFullYear()}`
+        return `${months[date.getMonth()].substring(0, 3)} ${date.getDate()}, ${date.getFullYear()}`
     }
 }
 
