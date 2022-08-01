@@ -7,6 +7,55 @@ body
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header
+{
+    background-color: #083d77;
+    border-bottom: 3px solid #90ddf0;
+    padding: 2em 0;
+}
+
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    color: #f0f0f0;
+}
+
+header nav a
+{
+    color: #afaff8;
+}
+
+header h1
+{
+    color: #f0f0f0;
+}
+
+#login-modal .spacer
+{
+    position: relative;
+}
+
+#login-modal .flex
+{
+    position: absolute;
+    overflow: hidden;
+    right: 0%;
+}
+
+#login-modal .border
+{
+    display: none;
+    background-color: #baffba;
+    border-radius: 0 0 1rem 1rem;
+    padding: 0.5rem;
+}
+
+#login-modal .grid
+{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 h1
 {
     margin: 0;
@@ -27,4 +76,14 @@ main
 main h1
 {
     padding: 0 0 1rem;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.grid
+{
+    display: grid;
 }

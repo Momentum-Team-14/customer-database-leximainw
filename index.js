@@ -58,6 +58,7 @@ function formatName(name)
 function pushCustomer(customer)
 {
     const elem = document.createElement('div')
+    document.querySelector('#customers').appendChild(elem)
     elem.classList.add('customer')
     const picture = customer.picture
     let child = document.createElement('img')
@@ -72,10 +73,14 @@ function pushCustomer(customer)
     {
         child = document.createElement('div')
         child.classList.add('contact-info')
-        child.classList.add('mbh')
         child.innerText = customer.email
         elem.appendChild(child)
     }
+    if (!isAdmin)
+    {
+        return
+    }
+    child.classList.add('mbh')
     if (customer.location)
     {
         const location = customer.location
@@ -107,7 +112,6 @@ function pushCustomer(customer)
         child.innerText = `Customer since: ${formatDate(customer.registered.date)}`
         elem.appendChild(child)
     }
-    document.querySelector('#customers').appendChild(elem)
 }
 
 customers.forEach(pushCustomer)
