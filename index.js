@@ -57,12 +57,14 @@ function pushCustomer(customer)
     elem.appendChild(child)
     child = document.createElement('div')
     child.classList.add('name')
+    child.classList.add('mbq')
     child.innerText = formatName(customer.name)
     elem.appendChild(child)
     if (customer.email)
     {
         child = document.createElement('div')
         child.classList.add('contact-info')
+        child.classList.add('mbh')
         child.innerText = customer.email
         elem.appendChild(child)
     }
@@ -80,6 +82,7 @@ function pushCustomer(customer)
         const stateCode = (usStates.find(x => x.name === location.state)
             || {abbreviation: location.state})
             .abbreviation
+        child.classList.add('mbh')
         child.innerText = `${location.city} ${stateCode} ${location.postcode}`
         elem.appendChild(child)
     }

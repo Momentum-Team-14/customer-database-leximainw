@@ -1,4 +1,39 @@
+#customers
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.customer
+{
+    width: 24%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
 .customer img
 {
     border-radius: 999rem;
+}
+
+.customer .name
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.customer .contact-info
+{
+    font-size: 0.8em;
+}
+
+.mbq
+{
+    margin-bottom: 0.25rem;
+}
+
+.mbh
+{
+    margin-bottom: 0.5rem;
 }
