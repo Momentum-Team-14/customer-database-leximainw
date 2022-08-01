@@ -1,0 +1,30 @@
+body
+{
+    margin: auto;
+    width: 80%;
+    background-color: #f0f0f0;
+    color: #303030;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1
+{
+    margin: 0;
+}
+
+.spacer
+{
+    margin: auto;
+    width: 90%;
+}
+
+main
+{
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+main h1
+{
+    padding: 0 0 1rem;
+}
