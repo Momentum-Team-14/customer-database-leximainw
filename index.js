@@ -84,7 +84,7 @@ function pushCustomer(customer)
             || {abbreviation: location.state})
             .abbreviation
         child.classList.add('mbh')
-        child.innerText = `${location.city} ${stateCode} ${location.postcode}`
+        child.innerText = `${location.city}, ${stateCode} ${location.postcode}`
         elem.appendChild(child)
     }
     if (customer.dob)
