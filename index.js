@@ -114,4 +114,9 @@ function pushCustomer(customer)
     }
 }
 
-customers.forEach(pushCustomer)
+function refreshCustomers()
+{
+    document.querySelector('#customers').innerHTML = ''
+    customers.forEach(pushCustomer)
+}
+refreshCustomers()

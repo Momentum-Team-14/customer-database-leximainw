@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="index.css">
+    <script src="main.js" defer></script>
     <script src="customers.js" defer></script>
     <script src="states.js" defer></script>
     <script src="moment.js" defer></script>
@@ -17,23 +18,26 @@
         <div class="spacer">
             <nav>
                 <h1>Buy 'N' Large</h1>
-                <div><a id="login-link" href="./login.html">Sign In</a> or <a href="./register.html">Sign Up</a></div>
+                <div>
+                    <div id="login-nav"><a id="login-link" href="./login.html">Sign In</a> or <a href="./register.html">Sign Up</a></div>
+                    <div id="user-nav"><a href="./profile.html"></a></div>
+                </div>
             </nav>
         </div>
     </header>
     <div id="login-modal">
         <div class="spacer">
             <div class="flex">
-                <div class="border">
+                <form class="border">
                     <div class="grid">
                         <div>Username:</div>
-                        <div><input type="text" value="admin"></div>
+                        <div><input class="user" type="text" value="admin"></div>
                         <div>Password:</div>
-                        <div><input type="password" value="admin"></div>
+                        <div><input class="pass" type="password" value="admin"></div>
                         <div></div>
                         <div><button>Sign In</button></div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
