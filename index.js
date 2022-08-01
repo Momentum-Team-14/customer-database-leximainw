@@ -78,8 +78,9 @@ function pushCustomer(customer)
             child.innerText = `${street.number} ${street.name}`
             elem.appendChild(child)
         }
+        const state = location.state.toUpperCase()
         child = document.createElement('div')
-        const stateCode = (usStates.find(x => x.name === location.state)
+        const stateCode = (usStates.find(x => x.name === state)
             || {abbreviation: location.state})
             .abbreviation
         child.classList.add('mbh')
