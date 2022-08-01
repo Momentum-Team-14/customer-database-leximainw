@@ -2,12 +2,15 @@ const displayTitles = false
 
 function capitalize(text)
 {
+    if (!text.length)
+    {
+        return ''
+    }
+    
     // vvv NO! (strings are indexed as UTF-16, so this can split Unicode codepoints)
     // return text[0].toUpperCase() + text.substring(1)
 
     // instead, destructuring a string gives codepoints
-    if (!text.length)
-        return ''
     const chars = [...text]
     return chars[0].toUpperCase() + chars.slice(1).join('')
 }
