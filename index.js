@@ -1,4 +1,5 @@
 const displayTitles = false
+const useMoment = true
 
 const months = [
     'January',
@@ -36,7 +37,14 @@ function formatDate(date)
     {
         date = new Date(date)
     }
-    return `${months[date.getMonth()].substring(0, 3)} ${date.getDate()} ${date.getFullYear()}`
+    if (useMoment)
+    {
+        return moment(date).format('ll')
+    }
+    else
+    {
+        return `${months[date.getMonth()].substring(0, 3)} ${date.getDate()} ${date.getFullYear()}`
+    }
 }
 
 function formatName(name)
