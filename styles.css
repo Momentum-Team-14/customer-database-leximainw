@@ -14,21 +14,30 @@ header
     padding: 2em 0;
 }
 
+header h1
+{
+    display: flex;
+    align-items: center;
+    color: #f0f0f0;
+}
+
+header h1 img
+{
+    margin-right: 1rem;
+    height: 4rem;
+}
+
 header nav
 {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     color: #f0f0f0;
 }
 
 header nav a
 {
     color: #afaff8;
-}
-
-header h1
-{
-    color: #f0f0f0;
 }
 
 #login-modal .spacer
